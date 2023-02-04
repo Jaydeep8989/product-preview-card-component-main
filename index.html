@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!--<link rel="stylesheet" href="./index.css"> -->
+
+  <style>
+    body {
+      background-color: hsl(30, 38%, 92%);
+    }
+
+    main {
+      display: grid;
+      max-width: 90%;
+      width: 37.5rem;
+      height: 100%;
+      margin: 0 auto;
+      margin-top: 11rem !important;
+      background-color: hsl(0, 0%, 100%);
+      grid-template-columns: 1fr 1fr;
+      border-radius: 15px;
+      ;
+    }
+
+    .left_side {
+      background-image: url("./images/image-product-desktop.jpg");
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      border-radius: 15px 0 0 15px;
+      background-repeat: no-repeat;
+    }
+
+    .right_side {
+      margin: 30px;
+    }
+
+    h1 {
+      
+      font-weight: lighter;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-size: 0.7rem;
+      color: hsl(228, 12%, 48%);
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      line-height: 2rem;
+      font-weight: 700;
+    }
+
+    .right_side p {
+      font-weight: lighter;
+      font-size: 0.9rem;
+      color: hsl(228, 12%, 48%);
+      line-height: 1.4rem;
+    }
+
+    span {
+      font-size: 10px;
+      text-decoration: line-through;
+      margin-left: 50px;
+    }
+
+    .pricing p {
+      color: hsl(158, 36%, 37%);
+      
+      font-size: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.6rem;
+      margin-top: 1rem;
+    }
+
+    .pricing p span {
+      font-weight: lighter;
+      color: hsl(228, 12%, 48%);
+      text-decoration: line-through;
+      font-size: 0.8rem;
+    }
+
+    button {
+      cursor: pointer;
+      border: 1px solid hsl(158, 36%, 37%);
+      background-color: hsl(158, 36%, 37%);
+      color: hsl(0, 0%, 100%);
+      font-weight: 700;
+      border-radius: 10px;
+      padding: 0.9rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all ease-in-out 0.2s;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="left_side">
+      <!-- <img src="./images/image-product-desktop.jpg" alt=""> -->
+    </div>
+    <section class="right_side">
+      <h1>Perfume</h1>
+      <h2>
+        Gabrielle Essence Eau De Parfum
+      </h2>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+      <div class="pricing">
+        <p>$149.99<span>$169.99</span></p>
+        <button>
+          <img src="./images/icon-cart.svg" alt="" aria-hidden=“true”>
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+</body>
+
+</html>
